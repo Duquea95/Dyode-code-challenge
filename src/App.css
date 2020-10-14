@@ -62,7 +62,8 @@ li {
 header,
 .hero-text h1,
 .hero-text p,
-.shop-now__cta {
+.shop-now__cta,
+.product-card__button {
   color: #fff;
 }
 .hero-text h1, .nav-logo a, .product-card__text{
@@ -118,6 +119,13 @@ header{
   background-color: #000;
   padding: 5px 12px;
 }
+.black-button{
+   background-color: #000;
+}
+.green-button,
+.product-card__button{
+   background-color: #10504f;
+}
 
 .product-cards__container{
   padding-top: 15px;
@@ -137,10 +145,6 @@ header{
 }
 .product-card:last-child {
   display: none;
-}
-.product-card__button{
-  background: #10504f;
-  color: #fff;
 }
 
 @media only screen and (min-width: 1024px){

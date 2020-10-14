@@ -4,6 +4,8 @@ import Image3 from './images/Womens_Image.jpg'
 import Image4 from './images/Mens_Image.jpg'
 import Image5 from './images/Accessories_Image_Mobile.jpg'
 import Image6 from './images/Accessories_Image.jpg'
+import Image7 from './images/Hero_Image_2.jpg'
+import Image8 from './images/Hero_Image_2_Mobile.jpg'
 
 export const MainHeroImages = [
     Image1,
@@ -26,4 +28,9 @@ export const ProductCardImages = [
         name: "Accessories",
         image: Image6
     }
+]
+
+export const SubHeroImages = [
+    Image7,
+    Image8
 ]
