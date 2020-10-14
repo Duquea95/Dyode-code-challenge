@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: local('Pacifico'), url(./fonts/Pacifico/Pacifico.ttf);
+}
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(./fonts/Lato/Lato-Regular.ttf)
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: local('LatoLatoBold'), url(./fonts/Lato/Lato-Bold.ttf)
+}
+@font-face {
+  font-family: 'LatoBoldItalic';
+  src: local('LatoBoldItalic'), url(./fonts/Lato/Lato-BoldItalic.ttf)
+}
+@font-face {
+  font-family: 'LatoHeavy';
+  src: local('LatoHeavy'), url(./fonts/Lato/Lato-Heavy.ttf)
+}
+@font-face {
+  font-family: 'LatoItalic';
+  src: local('LatoItalic'), url(./fonts/Lato/Lato-Italic.ttf)
+}
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -10,11 +35,22 @@
 .hidden {
   display: none;
 }
-.row {
+.row,
+.hero-text__container .column {
   display: flex;
+}
+.column,
+.hero-text__container {
+ height: 100%;
 }
 .center-row{
   justify-content: center;
+}
+.hero-text__container .column {
+  align-items: center;
+}
+img {
+  width: 100%;
 }
 li {
   list-style: none;
@@ -22,8 +58,18 @@ li {
 .container-fluid{
   padding: 0 23px;
 }
+header,
+.hero-text h1,
+.hero-text p,
+.shop-now__cta {
+  color: #fff;
+}
+.hero-text h1, .nav-logo a{
+  font-family: Pacifico;
+}
 header{
   padding: 10px 0;
+  background: #10504f;
 }
 .nav__desktop-container {
   display: none;
@@ -39,6 +85,37 @@ header{
 }
 .nav__mobile-center{
   flex-grow: 2
+}
+.nav-logo a{
+  font-size: 18px;
+}
+
+.hero-container{
+  position: relative;
+}
+.hero-text__container{
+  position: absolute;
+}
+.hero-text h1{
+  font-size: 16px;
+}
+.hero-text p{
+  font-size: 12px;
+}
+.shop-now__cta{
+  font-size: 8px;
+}
+
+.hero-text > div{
+  margin-bottom: 15px;
+}
+.button-wrap{
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.shop-now__cta{
+  background-color: #000;
+  padding: 5px 12px;
 }
 
 @media only screen and (min-width: 1024px){
@@ -57,11 +134,25 @@ header{
   .nav-logo{
     padding-right: 15px;
   }
+  .nav-logo a {
+    font-size: 24px;
+  }
   .nav-items{
     display: inline-flex;
     padding-right: 15px;
   }
   .nav__mobile-container {
     display: none;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .shop-now__cta {
+    font-size: 16px;
   }
 }
