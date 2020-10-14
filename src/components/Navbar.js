@@ -50,7 +50,7 @@ const Navbar = () =>{
                 </ul>
               </nav>
               <div className="nav__mobile-center">
-                <div>
+                <div className="nav-logo">
                   <a>Logo</a>
                 </div>
               </div>
