@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Hero = ({images}) => {
-    console.log(images)
+const Hero = ({images, button}) => {
+    console.log(button)
 
     return(
         <div className="hero">
@@ -18,7 +18,7 @@ const Hero = ({images}) => {
                                 </div>
                                 <div></div>
                                 <div className="button-wrap">
-                                    <a className="shop-now__cta">SHOP NOW</a>
+                                    <a className="shop-now__cta black-button">SHOP NOW</a>
                                 </div>
                             </div>
                         </div>
