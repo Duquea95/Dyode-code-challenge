@@ -6,6 +6,10 @@ import Image5 from './images/Accessories_Image_Mobile.jpg'
 import Image6 from './images/Accessories_Image.jpg'
 import Image7 from './images/Hero_Image_2.jpg'
 import Image8 from './images/Hero_Image_2_Mobile.jpg'
+import SocialIcon1 from './images/Group_3.png'
+import SocialIcon2 from './images/Group_8.png'
+import SocialIcon3 from './images/Group_15.png'
+import EmailIcon from './images/Email_Icon.png'
 
 export const MainHeroImages = [
     Image1,
@@ -34,3 +38,11 @@ export const SubHeroImages = [
     Image7,
     Image8
 ]
+
+export const SocialIcons = [
+    SocialIcon1,
+    SocialIcon2,
+    SocialIcon3
+]
+
+export const FormIcon = EmailIcon

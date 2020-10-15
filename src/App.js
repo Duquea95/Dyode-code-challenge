@@ -6,8 +6,12 @@ import {
   MainHeroImages,
   ProductCardImages,
   SubHeroImages,
+  SocialIcons,
+  FormIcon
 } from './Images.js'
 import ProductCards from './components/ProductCards'
+import InstagramReel from './components/InstagramReel'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -26,7 +30,7 @@ function App() {
           button = {"green"}
           />
         </main>
-        <footer></footer>
+        <Footer images ={SocialIcons} EmailIcon={FormIcon}/>
       </div> 
     </div>
   )
