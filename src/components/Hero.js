@@ -6,19 +6,26 @@ const Hero = ({images, button}) => {
     return(
         <div className="hero">
             <div className="hero-container">
-                <div className="hero-text__container column">
+                <div 
+                className={`column hero-text__container 
+                    ${button == "black" ? "hero-text__container-left": "hero-text__container-right"}`}
+                >
                     <div className="column">
-                        <div className="container-fluid">
+                        <div>
                             <div className="hero-text">
                                 <div>
                                     <h1>Title Goes Here</h1>
                                 </div>
                                 <div>
-                                    <p>Tagline will go right here</p>
+                                    <p className="hero-copy">Tagline will go right here</p>
                                 </div>
-                                <div></div>
                                 <div className="button-wrap">
-                                    <a className="shop-now__cta black-button">SHOP NOW</a>
+                                    {button === "black" &&
+                                        <a className="shop-now__cta black-button">SHOP NOW</a>
+                                    }
+                                    {button === "green" &&
+                                        <a className="shop-now__cta green-button">SHOP NOW</a>
+                                    }
                                 </div>
                             </div>
                         </div>

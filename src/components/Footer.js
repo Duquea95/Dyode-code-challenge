@@ -23,7 +23,7 @@ const Footer = ({images, EmailIcon}) => {
         <footer>
             <div>
                 <div className="footer__email-container">
-                    <div className = "margin-bottom__m container-fluid" >
+                    <div className="margin-bottom__m container-fluid">
                         <div className="title-container">
                             <div>
                                 <img className="email-icon" src={EmailIcon} alt="Email Icon"/>
@@ -38,7 +38,7 @@ const Footer = ({images, EmailIcon}) => {
                     <div className="email-container__bottom container-fluid">
                         <div className="email-container__bottom-left">
                             <div>
-                                <div className="margin-bottom__m">
+                                <div className="margin-bottom__l">
                                     <p className="signup-form__copy">
                                         Sign up for the newsletter and get 20% off! Get access to exclusive offers and be the first to know when new stuff drops.
                                     </p>
