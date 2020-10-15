@@ -1,7 +1,13 @@
 import React from 'react'
 
 const ProductCards = ({images}) => {
-    // console.log(images)
+
+    // function ProductTrio = () =>{
+    //     return(
+
+    //     )
+    // }
+    
     return(
         <div className="product-cards__container">
             {
