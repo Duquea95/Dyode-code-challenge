@@ -140,6 +140,7 @@ p{
 .announcement-bar p,
 .nav__mobile-container,
 .product-card__button,
+.product-cards__container,
 .carousel-title__container,
 .carousel-item,
 .instagram-title__container,
@@ -147,6 +148,7 @@ p{
 .footer__email-container {
   text-align: center;
 }
+
 .nav__desktop-container,
 .nav__mobile-container,
 .hero-text__container .column {
@@ -199,7 +201,7 @@ p{
 }
 .hero-text__container-right{
   right: 0;
-  padding-right: 23px;
+  padding-right: 5%;
 }
 .hero-text h1{
   font-size: 16px;
@@ -408,7 +410,7 @@ header,
   }
 
   .hero-text__container-right {
-    padding-right: 300px;
+    padding-right: 15%;
   }
 
   .hero-text p {
