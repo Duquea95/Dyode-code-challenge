@@ -9,7 +9,8 @@ import Footer from './components/Footer'
 import {
   LogoImage,
   MainHeroImages,
-  ProductCardImages,
+  MobileCardImages,
+  DesktopCardImages,
   SubHeroImages,
   ProductImage,
   Arrows,
@@ -29,7 +30,10 @@ function App() {
           images = {MainHeroImages}
           button = "black"
           />
-          <ProductCards images={ProductCardImages}/>
+          < ProductCards
+          mobileImages = {MobileCardImages}
+          desktopImages = {DesktopCardImages}
+          />
           <Carousel image={ProductImage} arrows={Arrows}/>
           <Hero
           images = {SubHeroImages}

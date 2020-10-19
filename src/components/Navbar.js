@@ -15,13 +15,23 @@ const Navbar = ({image,announcement}) =>{
     return (
         <React.Fragment>
             <div className={`mobile-dropdown ${isOpen ? "" : "hidden"}`}>
-                <ul>
-                    {navLinks.map((link,index) => (
-                    <li key={index}>
-                        <a>{link}</a>
-                    </li>
-                    ))}
-                </ul>
+                <div className="dropdown-top">
+                    <div className="nav-logo">
+                        <a><img src={image} alt="Logo"/></a>
+                    </div>
+                </div>
+                <div className="dropdown-links">
+                    <ul className="column">
+                        {navLinks.map((link,index) => (
+                        <li key={index}>
+                            <a>{link}</a>
+                        </li>
+                        ))}
+                    </ul>
+                </div>
+                <a className="dropdown-bottom" onClick={() => setIsOpen(false)}>
+                    Close
+                </a>
             </div>
             <header>
                 <div className="announcement-bar">

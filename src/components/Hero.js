@@ -1,14 +1,13 @@
 import React from 'react'
 
 const Hero = ({images, button}) => {
-    console.log(button)
 
     return(
         <div className="hero">
             <div className="hero-container">
                 <div 
                 className={`column hero-text__container 
-                    ${button == "black" ? "hero-text__container-left": "hero-text__container-right"}`}
+                    ${button === "black" ? "hero-text__container-left": "hero-text__container-right"}`}
                 >
                     <div className="column">
                         <div>
@@ -32,7 +31,7 @@ const Hero = ({images, button}) => {
                     </div>
                 </div>
                 <picture>
-                    <source media="(min-width: 1024px)" srcSet={images[0]}/>
+                    <source media="(min-width: 768px)" srcSet={images[0]}/>
                     <img src={images[1]} alt=""/>
                 </picture>
             </div>

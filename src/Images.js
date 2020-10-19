@@ -26,22 +26,32 @@ export const MainHeroImages = [
     Image1,
     Image2
 ]
-export const ProductCardImages = [
+export const MobileCardImages = [
     {
         name: "Womens",
-        image: Image3
+        src: Image3
     },
     {
         name: "Mens",
-        image: Image4
+        src: Image4
     },
     {
         name: "Accessories",
-        image: Image5
+        src: Image5
+    }
+]
+export const DesktopCardImages = [
+    {
+        name: "Womens",
+        src: Image3
+    },
+    {
+        name: "Mens",
+        src: Image4
     },
     {
         name: "Accessories",
-        image: Image6
+        src: Image6
     }
 ]
 
